@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Party - YouTube Sync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 Watch Party</h1>
+            <div class="room-info">
+                <span id="roomStatus">Not in a room</span>
+                <button id="copyLinkBtn" style="display: none;">Copy Room Link</button>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Video Section -->
+            <div class="video-section">
+                <div class="video-controls">
+                    <input type="text" id="videoUrl" placeholder="Paste YouTube video URL here...">
+                    <button id="loadVideoBtn">Load Video</button>
+                </div>
+                <div id="player-wrapper">
+                    <div id="player"></div>
+                </div>
+            </div>
+
+            <!-- Chat Section -->
+            <div class="chat-section">
+                <div class="chat-header">
+                    <h3>💬 Chat</h3>
+                </div>
+                <div id="messages"></div>
+                <div class="chat-input">
+                    <input type="text" id="messageInput" placeholder="Type a message...">
+                    <button id="sendBtn">Send</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Room Controls -->
+        <div class="room-controls">
+            <button id="createRoomBtn">Create New Room</button>
+            <div class="join-room">
+                <input type="text" id="roomIdInput" placeholder="Enter room code...">
+                <button id="joinRoomBtn">Join Room</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- YouTube IFrame API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <!-- Socket.IO -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
