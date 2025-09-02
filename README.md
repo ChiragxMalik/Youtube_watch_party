@@ -15,14 +15,14 @@ Built with **Node.js, Express, Socket.IO, and vanilla HTML/CSS/JS**.
 ---
 
 ## Project Structure
-
+```
 Youtube_watch_party/
 ├── server.js       # Backend server (Express + Socket.IO)
 ├── index.html      # Frontend HTML
 ├── style.css       # Styling
 ├── script.js       # Frontend JavaScript
 └── package.json    # Node.js dependencies
-
+```
 ---
 
 ## 🚀 Getting Started
